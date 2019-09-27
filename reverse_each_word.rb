@@ -8,12 +8,12 @@ def reverse_each_word_each(string)
 end
 
 def reverse_each_word_collect(string)
-  array = string.split(" ")
-  test_array = []
+  original_arrayarray = string.split(" ")
+  return_array = []
   array.collect do|string|
-    test_array << string.reverse
+    return_array << string.reverse
   end
-  test_array.join(" ")
+  return_array.join(" ")
 end
 
 reverse_each_word("Hello there, and how are you?")
